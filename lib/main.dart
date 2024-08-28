@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:travel_app/core/utils/app_router.dart';
 import 'package:travel_app/screens/splash_screen.dart';
 
 void main() {
@@ -15,10 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: appRouter.router,
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
-      title: 'Travel App',
     );
   }
 }
