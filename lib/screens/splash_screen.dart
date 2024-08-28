@@ -12,7 +12,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 3), () {
-      GoRouter.of(context).push(appRouter.kboardingscreen);
+      GoRouter.of(context).push(appRouter.klogin);
     });
   }
 

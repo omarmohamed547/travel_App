@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:travel_app/screens/onboarding_screen.dart';
+import 'package:travel_app/screens/homeScreen.dart';
+import 'package:travel_app/screens/loginScreen.dart';
 import 'package:travel_app/screens/splash_screen.dart';
 
 class appRouter {
-  static const kboardingscreen = '/boardingscreen';
+  static const klogin = '/loginscreen';
+  static const khome = '/homescreen';
+
   static final GoRouter router = GoRouter(routes: <RouteBase>[
     GoRoute(
         path: '/',
@@ -12,9 +15,14 @@ class appRouter {
           return SplashScreen();
         }),
     GoRoute(
-        path: kboardingscreen,
+        path: klogin,
         builder: (BuildContext context, GoRouterState state) {
-          return OnboardingScreen();
+          return LoginScreen();
+        }),
+    GoRoute(
+        path: khome,
+        builder: (BuildContext context, GoRouterState state) {
+          return homescreen();
         })
   ]);
 }
