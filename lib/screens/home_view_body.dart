@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/widgets/popular_item.dart';
 
 class homeviewBody extends StatefulWidget {
   @override
@@ -133,6 +134,41 @@ class _homeviewBodyState extends State<homeviewBody>
                         fontWeight: FontWeight.w500,
                         color: Color(0XFF176FF2))),
               ],
+            ),
+            SizedBox(height: 12),
+            SizedBox(
+              height: 200,
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: popularitem(
+                          imageUrl:
+                              'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
+                          title: "popular",
+                          rating: 4.8),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: popularitem(
+                          imageUrl:
+                              'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
+                          title: "popular",
+                          rating: 4.8),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 10),
+                      child: popularitem(
+                          imageUrl:
+                              'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
+                          title: "popular",
+                          rating: 4.8),
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ),
