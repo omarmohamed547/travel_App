@@ -165,8 +165,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         // Sign up
                         TextButton(
                           onPressed: () {
-                            Navigator.pushReplacementNamed(
-                                context, '/register');
+                            GoRouter.of(context).push(appRouter.kregister);
                           },
                           child: Text('New here? Sign Up'),
                         ),
