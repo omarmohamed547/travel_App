@@ -91,7 +91,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
-                      'https://plus.unsplash.com/premium_photo-1670745800247-271e8977da41?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9tZXxlbnwwfHwwfHx8MA%3D%3D'), // Replace with your image path
+                      'https://images.unsplash.com/photo-1592635196078-9fdc757f27f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRhaiUyMG1haGFsfGVufDB8fDB8fHww'), // Replace with your image path
                   fit: BoxFit.cover,
                 ),
               ),

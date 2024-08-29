@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
       decoration: BoxDecoration(
         image: DecorationImage(
           image: NetworkImage(
-              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKU4005-zdf9Cuc6Z2vEIWhCNJcPwafr05kA&s'), // Add your image path here
+              'https://images.unsplash.com/photo-1592635196078-9fdc757f27f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRhaiUyMG1haGFsfGVufDB8fDB8fHww'), // Add your image path here
           fit: BoxFit.fill,
         ),
       ),
