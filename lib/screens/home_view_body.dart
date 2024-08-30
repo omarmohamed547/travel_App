@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/screens/widgets/Recommended_item.dart';
 import 'package:travel_app/screens/widgets/popular_item.dart';
+import 'package:travel_app/screens/widgets/popular_list.dart';
 
 class homeviewBody extends StatefulWidget {
   @override
@@ -136,36 +138,7 @@ class _homeviewBodyState extends State<homeviewBody>
               ],
             ),
             SizedBox(height: 12),
-            SizedBox(
-              height: 200,
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    popularitem(
-                        imageUrl:
-                            'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
-                        title: "popular",
-                        rating: 4.8),
-                    popularitem(
-                        imageUrl:
-                            'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
-                        title: "popular",
-                        rating: 4.8),
-                    popularitem(
-                        imageUrl:
-                            'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
-                        title: "popular",
-                        rating: 4.8),
-                    popularitem(
-                        imageUrl:
-                            'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
-                        title: "popular",
-                        rating: 4.8),
-                  ],
-                ),
-              ),
-            ),
+            popularlist(),
             SizedBox(
               height: 24,
             ),
@@ -184,6 +157,13 @@ class _homeviewBodyState extends State<homeviewBody>
                         color: Color(0XFF176FF2))),
               ],
             ),
+            SizedBox(
+              height: 100,
+              child: recommedndeditem(
+                  imageUrl:
+                      'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
+                  duration: "4N/5D"),
+            )
           ],
         ),
       ),

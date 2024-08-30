@@ -5,7 +5,7 @@ class popularitem extends StatelessWidget {
   final String title;
   final double rating;
 
-  const popularitem({
+  popularitem({
     required this.imageUrl,
     required this.title,
     required this.rating,
