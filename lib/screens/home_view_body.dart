@@ -137,7 +137,7 @@ class _homeviewBodyState extends State<homeviewBody>
                         color: Color(0XFF176FF2))),
               ],
             ),
-            SizedBox(height: 12),
+            SizedBox(height: 20),
             popularlist(),
             SizedBox(
               height: 24,
@@ -158,8 +158,13 @@ class _homeviewBodyState extends State<homeviewBody>
               ],
             ),
             SizedBox(
-              height: 100,
+              height: 20,
+            ),
+            SizedBox(
+              height: 150,
               child: recommedndeditem(
+                  deal: "Hot deal",
+                  title: "Explore Aspen",
                   imageUrl:
                       'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
                   duration: "4N/5D"),
