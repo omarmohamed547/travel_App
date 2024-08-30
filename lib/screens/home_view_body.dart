@@ -142,34 +142,48 @@ class _homeviewBodyState extends State<homeviewBody>
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: popularitem(
-                          imageUrl:
-                              'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
-                          title: "popular",
-                          rating: 4.8),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: popularitem(
-                          imageUrl:
-                              'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
-                          title: "popular",
-                          rating: 4.8),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: popularitem(
-                          imageUrl:
-                              'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
-                          title: "popular",
-                          rating: 4.8),
-                    ),
+                    popularitem(
+                        imageUrl:
+                            'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
+                        title: "popular",
+                        rating: 4.8),
+                    popularitem(
+                        imageUrl:
+                            'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
+                        title: "popular",
+                        rating: 4.8),
+                    popularitem(
+                        imageUrl:
+                            'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
+                        title: "popular",
+                        rating: 4.8),
+                    popularitem(
+                        imageUrl:
+                            'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
+                        title: "popular",
+                        rating: 4.8),
                   ],
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 24,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('Recommended',
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                        color: Color(0XFF232323))),
+                Text('See all',
+                    style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0XFF176FF2))),
+              ],
+            ),
           ],
         ),
       ),
