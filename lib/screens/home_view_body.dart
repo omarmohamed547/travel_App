@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:travel_app/screens/widgets/Recommended_item.dart';
 import 'package:travel_app/screens/widgets/popular_item.dart';
 import 'package:travel_app/screens/widgets/popular_list.dart';
+import 'package:travel_app/screens/widgets/recommended_list.dart';
 
 class homeviewBody extends StatefulWidget {
   @override
@@ -158,17 +159,9 @@ class _homeviewBodyState extends State<homeviewBody>
               ],
             ),
             SizedBox(
-              height: 20,
+              height: 10,
             ),
-            SizedBox(
-              height: 150,
-              child: recommedndeditem(
-                  deal: "Hot deal",
-                  title: "Explore Aspen",
-                  imageUrl:
-                      'https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg',
-                  duration: "4N/5D"),
-            )
+            SizedBox(height: 150, child: recommendedList())
           ],
         ),
       ),
